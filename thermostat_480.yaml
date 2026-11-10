@@ -136,8 +136,8 @@ display:
     vsync_front_porch: 8
     vsync_pulse_width: 10
     vsync_back_porch: 10
-    # Was 18MHz (Elecrow sample). Lower pixel clock eases PSRAM bandwidth
-    # pressure from LVGL redraws, which shows up as flicker/shimmer.
+    # Was 18MHz (Elecrow sample). 18MHz and 14MHz flicker, 12MHz is stable.
+    # Lower pixel clock eases PSRAM bandwidth pressure from LVGL redraws.
     pclk_frequency: 12MHz
     pclk_inverted: true
     init_sequence:
