@@ -1808,3 +1808,12 @@ font:
     size: 70
     bpp: 4
     glyphs: *menu_icons_all
+
+# ------------------------------------------------------------------
+# The 2.1" knob's encoder gives one quadrature half-cycle per detent.
+# With the default resolution (1) a count needed two detents, so menus
+# moved one item per two clicks. resolution 2 = one count per detent.
+# ------------------------------------------------------------------
+sensor:
+  - id: !extend temperature_encoder
+    resolution: 2
